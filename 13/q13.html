@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>q13</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container" id="container">
+        <h1>Gerente de Futebol 2025</h1>
+        <main>
+            <div id="menu">
+                <h2>Menu Principal</h2>
+                <form id="form-menu">
+                    <button type="button" id="btn-novo">Adicionar Jogador</button>
+                    <button type="button" id="btn-busca">Busca por posição</button>
+                    <button type="button" id="btn-listar">Listar time</button>
+                    <button type="button" id="btn-media">Calcular pontuação média</button>
+                    <button type="button" id="btn-sair">Sair</button>
+                    <div id="form-jogador">    
+                        <label for="entrada-nome">Nome: </label>
+                        <input type="text" id="entrada-nome" name="entrada-nome" placeholder="Digite o nome do jogador" required><br>
+                        <label for="entrada-idade">Idade: </label>
+                        <input type="number" id="entrada-idade" name="entrada-idade" placeholder="Digite a idade do jogador" step="1" min="12" required><br>
+                        <label for="entrada-posicao">Posicao: </label>
+                        <select name="entrada-posicao" id="entrada-posicao" name="entrada-posicao">
+                            <option value="goleiro">goleiro</option>
+                            <option value="defensor">defensor</option>
+                            <option value="meia">meia</option>
+                            <option value="atacante">atacante</option>
+                        </select><br>
+                        <label for="entrada-pontuacao">Pontuação: </label>
+                        <input type="number" id="entrada-pontuacao" name="entrada-pontuacao" placeholder="Digite a pontuação do jogador" step="0.01" min="0" max="10" required><br>
+                        <button type="submit" id="btn-confirmar">Confirmar e Inserir</button>
+                    </div>
+                    <div id="form-busca">    
+                        <label for="busca-posicao">Posicao: </label>
+                        <select name="busca-posicao" id="busca-posicao">
+                            <option value="goleiro">goleiro</option>
+                            <option value="defensor">defensor</option>
+                            <option value="meia">meia</option>
+                            <option value="atacante">atacante</option>
+                        </select><br>
+                        <button type="submit" id="btn-confirma-busca">Confirmar Busca</button>
+                    </div>
+                </form>
+            </div>
+        </main>
+    </div>
+</body>
+<script src="q13.js" type="module"></script>
+</html>
